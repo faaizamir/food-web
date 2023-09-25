@@ -1,0 +1,270 @@
+
+
+/* CSS RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Borel', cursive; */
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Itim', cursive; */
+    /* font-family: 'Prompt', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR  */
+#navbar {
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin: 0px;
+}
+
+/* NAV BAR LOGO AND IMAGE STYLING  */
+
+#logo {
+    margin: 32px 42px;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* NAV BAR LIST STYLING  */
+
+#navbar ul {
+    margin-left: 25px;
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 1.6rem;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 23px;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* HOME SECTION STYLING */
+#home {
+
+    height: 716px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    /* margin-top: 100px; */
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    height:80%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+#home h1 {
+    font-family: 'Itim', cursive;
+    text-align: center;
+    color: white;
+
+}
+
+#home p {
+    font-family: 'Itim', cursive;
+    font-size: 1.4rem;
+    text-align: center;
+    /* padding: 5px;
+    margin: 5px 2px; */
+    color: white;
+
+}
+
+/* UTILITY CLASSES */
+.h-primary {
+    font-family: 'Itim', cursive;
+    font-size: 3rem;
+    padding: 13px;
+
+}
+
+.btn {
+    color: white;
+    font-size: 1.5rem;
+    margin: 40px;
+    padding: 6px 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgb(128 99 78 / 78%);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.center {
+    text-align: center;
+}
+
+.h-secondary {
+    font-family: 'Itim', cursive;
+    font-size: 2.3rem;
+    padding: 10px;
+}
+
+/* SERVICES SECTION */
+#services-container {
+    padding: 30px;
+    background-color: #8972629a;
+    width: 100vw;
+    /* border: 1px solid black; */
+}
+
+#services {
+    margin: 25px;
+    display: flex;
+}
+
+#services .box {
+    /* border: 2px solid red; */
+    width: 100vw;
+    padding: 70px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #8972627a;
+}
+
+#services .box img {
+    padding: 15px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Itim', cursive;
+    font-size: 1.2rem;
+}
+
+/* CLIENT SECTION STYLING */
+#client-section {
+    height: 38.3vh;  
+}
+
+#client-section img {
+    height: 120px;
+}
+
+#client-section h1 {
+    margin-top: 0px;
+    padding-top: 50px;
+
+}
+
+.client-items {
+    padding: 30px;
+    margin: 10px 10px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    height: 39%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* CONTACT SECTION STYLING */
+#contact{
+    /* border: 2px solid red; */
+    position: relative;
+    height: 600px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+}
+.contact-box label{
+    font-size: 1.2rem;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box input, .contact-box textarea{
+    width: 100%;
+    border-radius: 12px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+    padding: 20px 120px;
+}
